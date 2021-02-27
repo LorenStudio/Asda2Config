@@ -1,0 +1,10 @@
+C:\Users\Rodrigo\source\repos\ConfigAsda\bin\Debug\ConfigAsda.exe.config
+C:\Users\Rodrigo\source\repos\ConfigAsda\bin\Debug\ConfigAsda.exe
+C:\Users\Rodrigo\source\repos\ConfigAsda\bin\Debug\ConfigAsda.pdb
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.csprojAssemblyReference.cache
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.Form1.resources
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.Properties.Resources.resources
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.csproj.GenerateResource.cache
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.exe
+C:\Users\Rodrigo\source\repos\ConfigAsda\obj\Debug\ConfigAsda.pdb
