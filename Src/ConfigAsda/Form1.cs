@@ -307,15 +307,10 @@ namespace ConfigAsda
 
             if (comboBox2.SelectedIndex == 2)
             {
-                AliasingX2();
-            }
-
-            if (comboBox2.SelectedIndex == 3)
-            {
                 AliasingX4();
             }
 
-            if (comboBox2.SelectedIndex == 4)
+            if (comboBox2.SelectedIndex == 3)
             {
                 AliasingX8();
             }
