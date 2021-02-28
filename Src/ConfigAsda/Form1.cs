@@ -1,4 +1,4 @@
-﻿////////////////////////////////////////////////
+////////////////////////////////////////////////
 //             LORENSTUDIO                     /
 //          By Rodrigo(Lucifer)                /
 //          Whats: (22)98186-8617              /
@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//using System.Threading.Tasks;
 using System.Windows;
 using System.Diagnostics;
 using System.IO;
@@ -25,14 +24,15 @@ namespace ConfigAsda
     public partial class Form1 : Form
     {
         bool IsMinimized;
-        int Resolut;
+
+
         public Form1()
         {
             InitializeComponent();
             CheckMinimized();
         }
 
-        private void CheckMinimized() //VERIFICA SE A CHECKBOX FOI SELECIONADA OU NÃO.
+        public void CheckMinimized() //VERIFICA SE A CHECKBOX FOI SELECIONADA OU NÃO.
         {
             string str = ".\\\\system\\NewConfig.ini";
             try
@@ -111,6 +111,7 @@ namespace ConfigAsda
                 }
                 else
                 {
+
                     Common.lineChanger("Window_Mode    =FALSE", str, 9);
                     IsMinimized = false;
                 }
@@ -118,26 +119,13 @@ namespace ConfigAsda
             }
         }
 
-        private void Resolu1024() //MUDA A RESOLUÇÃO 
+            private void Resolu1024() //MUDA A RESOLUÇÃO 
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+               
                     Common.lineChanger("ResolutionX        =1024", str, 2);
                     Common.lineChanger("ResolutionY        =768", str, 3);
-
-                    Resolut = 1024;
-                    Resolut = 768;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1024", str, 2);
-                    Common.lineChanger("ResolutionY        =768", str, 3);
-                    Resolut = 1024;
-                    Resolut = 768;
-                }
-
             }
         }
 
@@ -146,21 +134,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+              
                     Common.lineChanger("ResolutionX        =1280", str, 2);
                     Common.lineChanger("ResolutionY        =768", str, 3);
-
-                    Resolut = 1280;
-                    Resolut = 768;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1280", str, 2);
-                    Common.lineChanger("ResolutionY        =768", str, 3);
-                    Resolut = 1280;
-                    Resolut = 768;
-                }
 
             }
         }
@@ -169,21 +145,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
                     Common.lineChanger("ResolutionX        =1280", str, 2);
                     Common.lineChanger("ResolutionY        =800", str, 3);
-
-                    Resolut = 1280;
-                    Resolut = 800;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1280", str, 2);
-                    Common.lineChanger("ResolutionY        =800", str, 3);
-                    Resolut = 1280;
-                    Resolut = 800;
-                }
+                    
 
             }
         }
@@ -193,21 +157,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+             
                     Common.lineChanger("ResolutionX        =1280", str, 2);
                     Common.lineChanger("ResolutionY        =960", str, 3);
-
-                    Resolut = 1280;
-                    Resolut = 960;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1280", str, 2);
-                    Common.lineChanger("ResolutionY        =960", str, 3);
-                    Resolut = 1280;
-                    Resolut = 960;
-                }
 
             }
         }
@@ -216,21 +168,10 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+               
                     Common.lineChanger("ResolutionX        =1280", str, 2);
                     Common.lineChanger("ResolutionY        =1024", str, 3);
 
-                    Resolut = 1280;
-                    Resolut = 1024;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1280", str, 2);
-                    Common.lineChanger("ResolutionY        =1024", str, 3);
-                    Resolut = 1280;
-                    Resolut = 1024;
-                }
 
             }
         }
@@ -240,22 +181,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+              
                     Common.lineChanger("ResolutionX        =1366", str, 2);
                     Common.lineChanger("ResolutionY        =768", str, 3);
-
-                    Resolut = 1366;
-                    Resolut = 768;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1366", str, 2);
-                    Common.lineChanger("ResolutionY        =768", str, 3);
-                    Resolut = 1366;
-                    Resolut = 768;
-                }
-
             }
         }
 
@@ -265,21 +193,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+              
                     Common.lineChanger("ResolutionX        =1680", str, 2);
                     Common.lineChanger("ResolutionY        =1050", str, 3);
-
-                    Resolut = 1680;
-                    Resolut = 1050;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1680", str, 2);
-                    Common.lineChanger("ResolutionY        =1050", str, 3);
-                    Resolut = 1680;
-                    Resolut = 1050;
-                }
 
             }
         }
@@ -289,21 +205,10 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[2] == "ResolutionX        =0")
-                {
+               
                     Common.lineChanger("ResolutionX        =1920", str, 2);
                     Common.lineChanger("ResolutionY        =1080", str, 3);
 
-                    Resolut = 1920;
-                    Resolut = 1080;
-                }
-                else
-                {
-                    Common.lineChanger("ResolutionX        =1920", str, 2);
-                    Common.lineChanger("ResolutionY        =1080", str, 3);
-                    Resolut = 1920;
-                    Resolut = 1080;
-                }
 
             }
         }
@@ -313,16 +218,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[27] == "MultiSampling_Type        =0")
-                {
+             
                     Common.lineChanger("MultiSampling_Type        =0", str, 28);
-                    Resolut = 0;
-                }
-                else
-                {
-                    Common.lineChanger("MultiSampling_Type        =0", str, 28);
-                    Resolut = 0;
-                }
+
 
             }
         }
@@ -331,16 +229,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[27] == "MultiSampling_Type        =0")
-                {
+               
                     Common.lineChanger("MultiSampling_Type        =1", str, 28);
-                    Resolut = 1;
-                }
-                else
-                {
-                    Common.lineChanger("MultiSampling_Type        =1", str, 28);
-                    Resolut = 1;
-                }
+
 
             }
         }
@@ -350,16 +241,9 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[27] == "MultiSampling_Type        =0")
-                {
+               
                     Common.lineChanger("MultiSampling_Type        =2", str, 28);
-                    Resolut = 2;
-                }
-                else
-                {
-                    Common.lineChanger("MultiSampling_Type        =2", str, 28);
-                    Resolut = 2;
-                }
+
 
             }
         }
@@ -369,29 +253,14 @@ namespace ConfigAsda
         {
             string str = ".\\\\system\\NewConfig.ini";
             {
-                if (System.IO.File.ReadAllLines(str)[27] == "MultiSampling_Type        =0")
-                {
+              
                     Common.lineChanger("MultiSampling_Type        =3", str, 28);
-                    Resolut = 3;
-                }
-                else
-                {
-                    Common.lineChanger("MultiSampling_Type        =3", str, 28);
-                    Resolut = 3;
-                }
+
 
             }
         }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            CheckMinimized();
-        }
-
-
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
             {
@@ -451,16 +320,20 @@ namespace ConfigAsda
                 AliasingX8();
             }
 
-            SetWinMode();
 
             MessageBox.Show("Configuração Salva:" + "\n  " + "Modo Janela:" + " " + WinMode.Checked + "\n  " + "Resolução:" + " " + comboBox1.SelectedItem + "\n " + "Anti Aliasing:" + " " + comboBox2.SelectedItem);
 
             Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void WinMode_MouseClick(object sender, MouseEventArgs e)
+        {
+            SetWinMode();
         }
     }
 }
