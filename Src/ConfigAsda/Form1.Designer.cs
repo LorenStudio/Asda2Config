@@ -1,4 +1,4 @@
-﻿
+
 namespace ConfigAsda
 {
     partial class Form1
@@ -39,12 +39,12 @@ namespace ConfigAsda
             // 
             // WinMode
             // 
-            this.WinMode.AutoSize = true;
             this.WinMode.Location = new System.Drawing.Point(161, 104);
             this.WinMode.Name = "WinMode";
             this.WinMode.Size = new System.Drawing.Size(15, 14);
             this.WinMode.TabIndex = 0;
             this.WinMode.UseVisualStyleBackColor = true;
+            this.WinMode.MouseClick += new System.Windows.Forms.MouseEventHandler(this.WinMode_MouseClick);
             // 
             // button1
             // 
@@ -54,7 +54,7 @@ namespace ConfigAsda
             this.button1.Size = new System.Drawing.Size(146, 31);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // comboBox1
             // 
@@ -98,7 +98,7 @@ namespace ConfigAsda
             this.button2.Size = new System.Drawing.Size(23, 22);
             this.button2.TabIndex = 9;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Form1
             // 
@@ -116,9 +116,7 @@ namespace ConfigAsda
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Asda2CFG";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
